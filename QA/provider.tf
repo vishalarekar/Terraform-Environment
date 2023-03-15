@@ -6,3 +6,10 @@ terraform {
     }
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "environment-setup-devops"
+    key    = "QA/qa-state-file"
+    region = "us-west-2"
+  }
+}
