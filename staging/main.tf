@@ -6,6 +6,6 @@ resource "aws_instance" "webserver" {
   count         = 2
   user_data     = file("script.sh")
   tags = {
-    Name = "QA-staging"
+    Name = "staging"
   }
 }
